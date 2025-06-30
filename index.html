@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Background Render</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+    canvas {
+      display: block;
+      margin: 0 auto;
+      image-rendering: optimizeSpeed;
+    }
+    #downloadBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #downloadBtn:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bgCanvas" width="1280" height="720"></canvas>
+  <button id="downloadBtn">Download Again</button>
+  <script src="script.js"></script>
+</body>
+</html>
